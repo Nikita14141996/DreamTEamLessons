@@ -5,11 +5,17 @@ import java.time.LocalDate;
 public class Pig implements MammalAnimal{
     private final String name;
     private final boolean chindren;
+    private final int age;
+    private final String sex;
+    private final LocalDate birthday;
 
 
-    public Pig(String name, boolean children ){
+    public Pig(String name, boolean children, int age, String sex, LocalDate birthday){
          this.name= name;
          this.chindren= children;
+         this.age= age;
+         this.sex= sex;
+         this.birthday= birthday;
      }
 
 
@@ -26,16 +32,16 @@ public class Pig implements MammalAnimal{
 
     @Override
     public int getAge() {
-        return 0;
+        return age;
     }
 
     @Override
     public String getSex() {
-        return null;
+        return sex;
     }
 
     @Override
     public LocalDate getBirthday() {
-        return null;
+        return birthday;
     }
 }
