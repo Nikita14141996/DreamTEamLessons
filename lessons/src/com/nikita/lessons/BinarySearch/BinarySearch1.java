@@ -1,6 +1,6 @@
 package com.nikita.lessons.BinarySearch;
 
-public class BinarySearch {
+public class BinarySearch1 {
     public boolean search(int[] array, int find) {
         boolean result = false; //объявление переменных
         int from = 0;
